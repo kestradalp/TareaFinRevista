@@ -105,12 +105,10 @@ class ArticulosAdaptador(
         }
     }
 
-    class broadcastReceiver(var download: Long): BroadcastReceiver() {
+    class broadcastReceiver(var download: Long) : BroadcastReceiver() {
         override fun onReceive(context: Context?, intent: Intent?) {
-            val id = intent?.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID, -1)
-            if (id == download)
-                Toast.makeText(context,  "Descarga completa", Toast.LENGTH_LONG).show()
+            if (intent?.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID, -1)!!.equals(download))
+                Toast.makeText(context, "Descarga completa", Toast.LENGTH_LONG).show()
         }
     }
-
 }
