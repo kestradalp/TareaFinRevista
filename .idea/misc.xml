@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ASUS/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.209375" />
+        <entry key="..\:/Users/ASUS/Desktop/Universidad/8vo Semestre/POOM/UteqWebService/app/src/main/res/drawable/lyt_bordesredondos.xml" value="0.145" />
+        <entry key="..\:/Users/ASUS/Desktop/Universidad/8vo Semestre/POOM/UteqWebService/app/src/main/res/layout/activity_articulos.xml" value="0.1953125" />
+        <entry key="..\:/Users/ASUS/Desktop/Universidad/8vo Semestre/POOM/UteqWebService/app/src/main/res/layout/activity_ediciones.xml" value="0.209375" />
+        <entry key="..\:/Users/ASUS/Desktop/Universidad/8vo Semestre/POOM/UteqWebService/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Desktop/Universidad/8vo Semestre/POOM/UteqWebService/app/src/main/res/layout/activity_revistas.xml" value="0.209375" />
+        <entry key="..\:/Users/ASUS/Desktop/Universidad/8vo Semestre/POOM/UteqWebService/app/src/main/res/layout/activity_view_pdf.xml" value="0.209375" />
+        <entry key="..\:/Users/ASUS/Desktop/Universidad/8vo Semestre/POOM/UteqWebService/app/src/main/res/layout/crdvwarticulos.xml" value="0.22" />
+        <entry key="..\:/Users/ASUS/Desktop/Universidad/8vo Semestre/POOM/UteqWebService/app/src/main/res/layout/crdvwediciones.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/Desktop/Universidad/8vo Semestre/POOM/UteqWebService/app/src/main/res/layout/crdvwrevistas.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/Desktop/Universidad/8vo Semestre/POOM/UteqWebService/app/src/main/res/layout/spinner_team.xml" value="0.209375" />
+        <entry key="..\:/Users/ASUS/Desktop/Universidad/8vo Semestre/POOM/UteqWebService/app/src/main/res/layout/style.xml" value="0.209375" />
+        <entry key="..\:/Users/knest/Documents/Android STUDIO/RevistasUteqWebService/RevistasUteqWebService-master/app/src/main/res/layout/activity_view_pdf.xml" value="0.15489130434782608" />
+        <entry key="..\:/Users/knest/Documents/Android STUDIO/RevistasUteqWebService/RevistasUteqWebService-master/app/src/main/res/layout/crdvwarticulos.xml" value="0.19791666666666666" />
+        <entry key="..\:/Users/knest/Documents/Android STUDIO/RevistasUteqWebService/RevistasUteqWebService-master/app/src/main/res/layout/notificacion.xml" value="0.10677083333333333" />
+        <entry key="..\:/Users/knest/Documents/Android STUDIO/RevistasUteqWebService/RevistasUteqWebService-master/app/src/main/res/xml/network_security_config.xml" value="0.17708333333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
