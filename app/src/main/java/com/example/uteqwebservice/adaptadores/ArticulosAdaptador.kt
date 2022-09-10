@@ -16,8 +16,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.example.uteqwebservice.R
 import com.example.uteqwebservice.Actividades.ViewPDFActivity
+import com.example.uteqwebservice.R
 import com.example.uteqwebservice.modelos.ArticuloModelo
 
 class ArticulosAdaptador(
@@ -93,22 +93,17 @@ class ArticulosAdaptador(
                 )
 
         try {
-            var download: Long = dwlManager.enqueue(request)
-            context.registerReceiver(
-                broadcastReceiver(download), IntentFilter(
-                    DownloadManager.ACTION_DOWNLOAD_COMPLETE
-                )
-            )
+            val idDownload = dwlManager.enqueue(request)
+            val filter = IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE)
+            context.registerReceiver(object : BroadcastReceiver() {
+                override fun onReceive(context: Context, intent: Intent) {
+                    if (intent?.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID, -1)!!.equals(idDownload))
+                        Toast.makeText(context, "Descarga completa", Toast.LENGTH_LONG).show()
+                }
+            }, filter)
         } catch (e: Exception) {
             Toast.makeText(context.applicationContext, "Error: " + e.message, Toast.LENGTH_LONG)
                 .show()
-        }
-    }
-
-    class broadcastReceiver(var download: Long) : BroadcastReceiver() {
-        override fun onReceive(context: Context?, intent: Intent?) {
-            if (intent?.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID, -1)!!.equals(download))
-                Toast.makeText(context, "Descarga completa", Toast.LENGTH_LONG).show()
         }
     }
 }
